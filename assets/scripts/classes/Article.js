@@ -9,7 +9,7 @@ export class Article {
   createArticle() {
     const article = document.createElement('a');
     article.classList.add('article');
-    article.href = `https://deeckoy.github.io/Devolution-project-blog/post.html?postId=${ this.id }`;
+    article.href = `/post.html?postId=${ this.id }`;
 
     const title = document.createElement('h2');
     title.classList.add('article__title');
@@ -19,7 +19,7 @@ export class Article {
 
     const author = document.createElement('a');
     author.classList.add('article__author');
-    author.href = `https://deeckoy.github.io/Devolution-project-blog/user.html?userId=${ this.author.id }`;
+    author.href = `/user.html?userId=${ this.author.id }`;
 
     title.textContent = this.title;
     body.textContent = this.body;
